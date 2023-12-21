@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMBU-Library Management System</title>
+    <link href="{% static 'css/bootstrap.css' %} "rel="stylesheet"/>
+    <script src="{% static 'js/bootstrap.bundle.js' %}"></script>
+    <link rel="stylesheet" href=
+    "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <style>
+      
+      
+      .bi-geo-alt{
+        font-size: 25px;
+        background-color: red;
+        color: white;
+        
+        padding-bottom: 0px;
+        border-radius: 10%;
+        
+      }
+      .bi-envelope{
+        font-size: 25px;
+        background-color: red;
+        color: white;
+        border-radius: 10%;
+
+      }
+      .bi-check2-square{
+        background-color: red;
+        font-size: 25px;
+        color: white;
+      }
+  a{
+    text-decoration: none;
+  }
+  .ab{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+
+  }
+      
+      .b{
+        font-size: 15px;
+        color: white;
+        text-decoration:none ;
+        
+      }
+      .c{
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+      }
+    .d{
+      font-size: 15px;
+        color: white;
+        text-decoration: none;
+     
+
+    }  
+    .text{
+      color: white;
+      font-size: 15px;
+    }
+      
+    </style>
+</head>
+<body>
+  <!-- header -->
+    <div class="container">
+
+        <div class="row  text-light" style="height: 100px; overflow: hidden;">
+            <div class="col-sm-4" style="text-align: center;background-color: black; "><img src="{% static 'images/logo.png' %}" style="height: 100px; border-radius:50% ; float: left;" ><p style="font-size: 15px; margin-left: 55px;">Tilka Manjhi Bhagalpur University<br>तिलका मांझी भागलपुर विश्वविद्यालय<p style="font-size:12px;">NAAC Accredited 'B' grade with CGPA 2.5</p></p></div>
+            <div class="col-sm-4"style="text-align: center; background-color:black;">
+              <form class="d-flex" role="search" style="margin-top:6%;">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info" type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div>
+            <div class="col-sm-4"style="text-align: center; background-color:black;font-size:20px; "><button  type="call" action="active" style="height: 36px; background-color:aquamarine; margin-top: 2%;"><i class="bi bi-telephone-fill" ></i> </button> +91-8787215288 
+              <br>
+              <a href="#"><i class="bi bi-twitter" style="margin:10px; color:aqua;"></i></a>
+              
+              <a href="https://www.facebook.com/tmbubhagalpur/"> <i class="bi bi-facebook" style="color: aqua;"></i></a>
+
+              <a href="#"><i class="bi bi-instagram" style="margin: 10px; color:aqua;"></i></a>
+              <a href="https://www.youtube.com/@tmbuinfo"><i class="bi bi-youtube" style="color: aqua; border-radius: 10%;"></i></a>
+              <a href="#"><i class="bi bi-google" style="margin:10px ; color: aqua;"></i></a>
+            
+            </div>
+          </div>
+         
+    <marquee style=" height: 23px; margin-top: 1%; background-color:white; color: black;"> <p><b>Welcome to Tilka Manjhi Bhagalpur University Library</p>
+      
+    </marquee>
+        <!-- header end -->
+        <div>
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg" style="background-color: black; height: 40px; ">
+            <div class="container-fluid">
+              <a class="librery Management System"  href="#" style="color:white; border: 1px solid red; background-color: red; border-radius: 0px 100px 0px 0px; height:35px; overflow: hidden;" >Library Management System</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" style="color: white; margin: px; margin: 10px; font-size: 20px; margin: 10px;" aria-current="page" href="{%  url 'lmsapp:index' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white; font-size: 20px; margin: 10px;" href="{% url 'lmsapp:abouts' %}">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white; font-size: 20px; margin: 10px;" href="{% url 'lmsapp:registration' %}">Registration</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white; font-size: 20px; margin: 10px;" href="{% url 'lmsapp:login' %}">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="color: white; font-size: 20px; margin: 10px;" href="{% url 'lmsapp:contactus' %}">Contact Us</a>
+                  </li>
+                  
+                  
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                 </form>  -->
+              </div>
+            </div>
+          
+           
+          </nav>
+            <!-- navbar end -->
+            <!-- slider start -->
+          <div id="carouselExampleControls " class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-inner " >
+              <div class="carousel-item active" >
+                <img src="{% static 'images/s1.jpg' %}"   style="height: 350px;" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/s2.jpeg' %}" style="height: 350px;" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/s3.jpg' %}" style="height: 350px;"  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- slider end -->
+          <!-- section start -->
+          
+                {% block main %}
+                <main>
+                <div class="row mt-2">
+            
+                  <div class="col-sm-3"style="min-height:600px; " ><img src="{% static 'images/lib1.jpg' %} "  alt="" style="width:500px; height:100%;"></div>
+                  <div class="col-sm-9"style="background-color:grey;min-height:600px;">
+                  </div>
+                
+                </main>
+                {% endblock main %}
+           
+          <!-- section end -->
+          
+          <!--<div class="row" style="margin-top: 1%;">
+            <div class="col-sm-4" style="min-height: 300px;"> <a href="#"><p style="font-size: 25px; border: 1px solid; margin-top: 2%; background-color: red; color: white; border-radius: 30%; text-align: center;"> Chancellor's Messages</p></a><img src="{% static 'images/p2.jpg' %}" style="height: 280px; width: 350px;  border: 1px solid red; border-radius: 7%;">
+              <span style="border: 2px solid; text-align: center; margin-left: 9%; font-size: 20px; background-color:red; color: white; border-radius: 30%;">Shri Rajendra Vishwanath Arlekar</span></div>
+            <div class="col-sm-4" style="min-height: 300px; ">
+              <a href="#"><p style="font-size: 25px; border: 1px solid; margin-top: 2%; background-color: red; color: white; border-radius: 30%; text-align: center;">Vice Chancellor's Messages</p></a><img src="{% static 'images/p3.jpg' %}" style="height: 280px; width: 350px;  border: 1px solid red; border-radius: 7%;">
+              <span style="border: 2px solid; text-align: center; margin-left: 20%; font-size: 20px; background-color:red; color: white; border-radius: 30%; overflow: hidden;">Prof. (Dr.) Jawahar Lal</span>
+            </div>
+            <div class="col-sm-4" style="min-height: 300px;">
+            <a href="#"><p style="font-size: 25px; border: 1px solid; margin-top: 2%; background-color: red; color: white; border-radius: 30%; text-align: center; overflow: hidden;"> Pro Vice Chancellor's Messages</p></a><img src="{% static 'images/p1.jpg' %}" style="height: 280px; width: 350px; border: 1px solid red; border-radius: 7%;">
+            <span style="border: 2px solid; text-align: center; margin-left: 25%; font-size: 20px; background-color:red; color: white; border-radius: 30%;">Prof. Ramesh Kumar</span>
+
+            </div>
+            </div>-->
+        <!-- footer start -->
+          <div class="row mt-2">
+            <div class="col-sm-4"style="background-color:black;min-height:250px;">
+              <div class="footer">
+              <div class="f1">
+                <ul>
+                  <h2 class="ab">Contact Us</h2>
+                    <a href="https://www.google.com/maps/place/Tilka+Manjhi+Bhagalpur+University/@25.248937,86.957852,16z/data=!4m6!3m5!1s0x39f04a742f137b4f:0xf7ae40a61d2c0a46!8m2!3d25.2489371!4d86.957852!16s%2Fm%2F03b_l2x?hl=en-US&entry=ttu">
+                      <i class="bi bi-geo-alt"></i>
+                   <b class="b">Tilka Manjhi Bhagalpur University <br> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Bhagalpur, Bihar, PIN-812007</b>
+                  </a>
+                </ul>
+                <ul>
+                    <a href="#">
+                      <i class="bi bi-envelope"></i>
+                   <b class="c">registrar@tmbuniv.ac.in </b>
+                  </a>
+                </ul>
+                <ul>
+                  <a href="#">
+                <i class="bi bi-envelope"></i>
+                 <b class="d">registrartmbu07@gmail.com </b>
+                </a>
+                
+              </ul>
+             </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.64313790145!2d86.955277074522!3d25.248941929604555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f04a742f137b4f%3A0xf7ae40a61d2c0a46!2sTilka%20Manjhi%20Bhagalpur%20University!5e0!3m2!1sen!2sin!4v1695170472451!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+            <div class="col-sm-4" style="background-color:black;min-height:250px;">
+            <div class="links">
+              <h2 style="text-align: center; color: white; margin-top: 30px; "> Important Links</h2>
+            </div> 
+              <a href=""> 
+               <ul class="text" style="font-size: 15px; font: bold; "> <i class="bi bi-check2-square"></i>&nbsp;National Academic Depository (NAD) </ul>
+              </a>
+ 
+             <a href="https://swayam.gov.in/"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>&nbsp;SWAYAM Portal </ul>
+              </a>
+              <a href="http://epgp.inflibnet.ac.in/"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>&nbsp;e-PG Pathshala</ul>
+              </a>
+              <a href="https://spoken-tutorial.org/"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>&nbsp;Spoken Tutorial </ul>
+              </a>
+              <a href="https://www.education.gov.in/"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>&nbsp;Minister of Human Resource Development </ul>
+              </a>
+              <a href="https://www.ugc.gov.in/"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>&nbsp;University Grants Commission (UGC) </ul>
+              </a>
+              <a href="https://state.bihar.gov.in/main/CitizenHome.html"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i> &nbsp;Government of Bihar</ul>
+              </a>
+              <a href="#"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>&nbsp;Government of India Web Directory</ul>
+              </a>
+              <a href="#"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>&nbsp;National Scholarship Portal </ul>
+              </a><a href="#"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>
+                All India Council for Technical Education(AICTE) </ul>
+              </a>
+              <a href="#"> 
+               <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>
+                All India Survey on Higher Education (AISHE) </ul>
+              </a>
+              <a href="#"> 
+                <ul class="text" style="font-size: 15px; "> <i class="bi bi-check2-square"></i>
+                  National Council For Teacher Education (NCTE) </ul>
+               </a>
+            </div>
+            <div class="col-sm-4"style="background-color:black;min-height:250px;">
+            
+              <div class="serch">
+                <h2 style="color: white; font-size: 30px; margin-top: 30px; text-align: center;">Search for Posts </h2>
+              <div style="margin-top:2em;">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="search"/>
+                  <button class="btn btn-outline-info" type="send"><i class="bi bi-search"></i></button>
+
+                </form>
+              </div>
+              </div>
+
+            </div>
+           
+             <div class="col-sm-12"style="background-color:red;min-height:90px;">
+              <p style="font-size: 30px; margin-top: 25px; text-align: center; color: white; font-family: 'Times New Roman', Times, serif;">Copyright © 1960-2023 <b style="font-size:35px ;">Tilka Manjhi Bhagalpur University.</b> All Rights Reserved.</p>
+            </div>
+          <!-- footer end -->
+    </div>
+</body>
+</html>

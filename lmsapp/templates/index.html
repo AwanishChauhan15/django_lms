@@ -1,0 +1,20 @@
+{% extends "parents.html"%}
+{% block main %}
+{% load static %}
+<!--<div class="col-sm-12"style="min-height:300px; margin-top:1%; " ><img src="{% static 'images/lib1.jpg' %} "  alt="" style="width:500px; height:100%;"></div>-->
+
+<div class="row" style="margin-top: 1%;">
+            <div class="col-sm-4" style="min-height: 300px;"> <a href="#"><p style="font-size: 25px; border: 1px solid; margin-top: 2%; background-color: red; color: white; border-radius: 30%; text-align: center;"> Chancellor's Messages</p></a><img src="{% static 'images/p2.jpg' %}" style="height: 280px; width: 350px;  border: 1px solid red; border-radius: 7%;">
+              <span style="border: 2px solid; text-align: center; margin-left: 9%; font-size: 20px; background-color:red; color: white; border-radius: 30%;">Shri Rajendra Vishwanath Arlekar</span></div>
+            <div class="col-sm-4" style="min-height: 300px; ">
+              <a href="#"><p style="font-size: 25px; border: 1px solid; margin-top: 2%; background-color: red; color: white; border-radius: 30%; text-align: center;">Vice Chancellor's Messages</p></a><img src="{% static 'images/p3.jpg' %}" style="height: 280px; width: 350px;  border: 1px solid red; border-radius: 7%;">
+              <span style="border: 2px solid; text-align: center; margin-left: 20%; font-size: 20px; background-color:red; color: white; border-radius: 30%; overflow: hidden;">Prof. (Dr.) Jawahar Lal</span>
+            </div>
+            <div class="col-sm-4" style="min-height: 300px;">
+            <a href="#"><p style="font-size: 25px; border: 1px solid; margin-top: 2%; background-color: red; color: white; border-radius: 30%; text-align: center; overflow: hidden;"> Pro Vice Chancellor's Messages</p></a><img src="{% static 'images/p1.jpg' %}" style="height: 280px; width: 350px; border: 1px solid red; border-radius: 7%;">
+            <span style="border: 2px solid; text-align: center; margin-left: 25%; font-size: 20px; background-color:red; color: white; border-radius: 30%;">Prof. Ramesh Kumar</span>
+
+            </div>
+            </div>
+                                          
+{% endblock main %}
